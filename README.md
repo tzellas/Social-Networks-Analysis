@@ -1,8 +1,16 @@
 # Network Analysis and Link Prediction
 
-**Apostolos Stefanos Tzellas**
+Can we predict whether two concepts are related from the connections around them? In a knowledge graph, concepts are dots and relationships are lines between them. I use the network's structure to score which pairs of concepts are likely to be connected.
 
-Three self-contained Python notebooks combining network analysis and machine learning to study communities, connectivity, and missing-link prediction. The ML work compares neighborhood features with learned Node2Vec embeddings, trains and tunes Random Forest classifiers, and evaluates predictions under strong class imbalance. Experiments on synthetic and real networks include executed results, 29 figures, and explanations of the findings.
+For link prediction, I turn shared neighbors and other local graph patterns into features for a Random Forest, then compare it with a model trained on Node2Vec representations of nodes. I also use community detection to group densely connected nodes and compare the email network's groups with departments. Finally, I measure paths, centrality, and connectivity across generated networks to examine how structure affects reachability and robustness. Each notebook includes the code, figures, and interpretation.
+
+**Python · NetworkX · scikit-learn · Node2Vec · igraph**
+
+## What this project does
+
+- 🔗 **Predict relationships:** Use graph features and Node2Vec embeddings to score pairs of concepts, then test predictions against known relationships set aside for evaluation.
+- 👥 **Find groups:** Compare ways to identify tightly connected communities, including whether email groups match formal departments.
+- 🕸️ **Explore structure:** Measure how network shape changes paths, influential nodes, and resilience when nodes are removed.
 
 ## Main findings
 
@@ -15,7 +23,7 @@ Three self-contained Python notebooks combining network analysis and machine lea
 
 | Notebook | Question | Methods |
 |---|---|---|
-| [03 · Link Prediction](03_link_prediction.ipynb) | Can topology recover missing relationships? | Jaccard; Random Forest tuning; Node2Vec and edge operators; precision–recall curves; confusion matrices |
+| [03 · Link Prediction](03_link_prediction.ipynb) | Can network structure predict relationships between concepts? | Jaccard; Random Forest tuning; Node2Vec and edge operators; precision–recall curves; confusion matrices |
 | [02 · Community Detection](02_community_detection.ipynb) | How do algorithms and objectives change detected groups? | Eight networks; Girvan–Newman, spectral clustering, greedy modularity; department-label agreement |
 | [01 · Network Structure](01_network_structure.ipynb) | How do connection rules affect reachability and robustness? | Centrality; PageRank; 100-trial connectivity sweeps; minimum node cuts; small-world rewiring |
 

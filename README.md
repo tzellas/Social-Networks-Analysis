@@ -1,10 +1,24 @@
-# Network Analysis and Link Prediction
+<div align="center">
+
+# 🕸️ Social Network Analysis
+
+Network structure, community detection and link prediction on real and synthetic networks, in three Jupyter notebooks.
+
+![Python](https://img.shields.io/badge/Python_3.11-3776AB?logo=python&logoColor=white)
+![NetworkX](https://img.shields.io/badge/NetworkX-2E7D9A)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Node2Vec](https://img.shields.io/badge/Node2Vec-6A4C93)
+![igraph](https://img.shields.io/badge/igraph-1F77B4)
+
+<sub>Author · [Apostolos Stefanos Tzellas](https://github.com/tzellas)</sub>
+
+</div>
+
+---
 
 Can we predict whether two concepts are related from the connections around them? In a knowledge graph, concepts are dots and relationships are lines between them. I use the network's structure to score which pairs of concepts are likely to be connected.
 
 For link prediction, I turn shared neighbors and other local graph patterns into features for a Random Forest, then compare it with a model trained on Node2Vec representations of nodes. I also use community detection to group densely connected nodes and compare the email network's groups with departments. Finally, I measure paths, centrality, and connectivity across generated networks to examine how structure affects reachability and robustness. Each notebook includes the code, figures, and interpretation.
-
-**Python · NetworkX · scikit-learn · Node2Vec · igraph**
 
 ## What this project does
 

@@ -10,7 +10,7 @@ Network structure, community detection and link prediction on real and synthetic
 ![Node2Vec](https://img.shields.io/badge/Node2Vec-6A4C93)
 ![igraph](https://img.shields.io/badge/igraph-1F77B4)
 
-<sub>Author · [Apostolos Stefanos Tzellas](https://github.com/tzellas)</sub>
+<sub>Author · [Apostolos Tzellas](https://github.com/tzellas)</sub>
 
 </div>
 
